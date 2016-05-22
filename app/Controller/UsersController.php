@@ -218,7 +218,6 @@ class UsersController extends AppController {
 
     $user   = $this->User->findBySlug($data);
     $id     = $user['User']['id'];
-    $values = $this->request->data['User'];
 
     $this->User->id = $id;
 
@@ -227,6 +226,7 @@ class UsersController extends AppController {
       }
 
     if ($this->request->is(array('post', 'put'))) {
+      $values = $this->request->data['User'];
 
       if (!empty($this->request->data['User']['new_pass']) && !empty($this->request->data['User']['old_pass'])) {
         if ($this->validPassword($user, $values['old_pass'], $values['new_pass'], $values['new_pass_bis'])) {
