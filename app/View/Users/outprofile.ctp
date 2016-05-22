@@ -11,7 +11,7 @@
               <p class="profile-title">Ce profil n'est pas rempli à 100%</p>
               <p>
                   Ce profil vient d'être créé et n'est pas encore renseigné.<br/>
-                  Revenez plus tard pour voir les mise à jour.
+                  Revenez plus tard pour voir les mises à jour.
               </p>
               </div>
           </div>

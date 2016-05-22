@@ -85,6 +85,13 @@
       )
     )
   );
+  // Router::connect(
+  //   '/arbres/ajouter',
+  //   array(
+  //     'controller'  => 'trees',
+  //     'action'      => 'add'
+  //   )
+  // );
 
   // Users
   Router::connect(
