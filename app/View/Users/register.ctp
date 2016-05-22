@@ -56,7 +56,7 @@
                         <div class="col-sm-12">
                                 <div class="cadre">
                                     <div class="avatar-preview-frame">
-                                        <img src="http://placehold.it/300x300" class="avatar-preview">
+                                        <img src="https://placehold.it/300x300" class="avatar-preview">
                                     </div>
                                 </div>
                                 <div class="form-group preview">
@@ -67,7 +67,7 @@
                         <div class="col-sm-12">
                             <div class="cadre">
                                 <div class="cover-preview-frame">
-                                    <img src="http://placehold.it/1000x270" class="cover-preview">
+                                    <img src="https://placehold.it/1000x270" class="cover-preview">
                                 </div>
                             </div>
                             <div class="form-group preview">
