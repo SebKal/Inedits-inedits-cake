@@ -82,13 +82,14 @@ class ContributionsController extends AppController {
       if (!empty($parent1))
       {
         $this->set('parent1', $parent1);
-      }
-      if ($parent1['Contribution']['parent_id'])
-      {
-        $parent2 = $this->Contribution->find('first', array(
-            'conditions' => array('Contribution.id' => $parent1['Contribution']['parent_id']),
-        ));
-        $this->set('parent2', $parent2);
+
+        if ($parent1['Contribution']['parent_id'])
+        {
+          $parent2 = $this->Contribution->find('first', array(
+              'conditions' => array('Contribution.id' => $parent1['Contribution']['parent_id']),
+          ));
+          $this->set('parent2', $parent2);
+        }
       }
 
       // Count view
