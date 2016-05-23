@@ -1,6 +1,6 @@
 <!-- META -->
 <?php $this->assign('title', 'Mentions légales') ?>
-// <?php $this->assign('description', 'Les mentions légales d\'Inedits') ?>
+<?php $this->assign('description', 'Les mentions légales d\'Inedits') ?>
 
 <!-- VIEW BLOCKS -->
 <?php
