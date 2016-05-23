@@ -206,6 +206,13 @@
       'action'      => 'add'
     )
   );
+  Router::connect(
+    '/contact/send',
+    array(
+      'controller'  => 'contacts',
+      'action'      => 'send'
+    )
+  );
 
 /**
  * ...and connect the rest of 'Pages' controller's URLs.
