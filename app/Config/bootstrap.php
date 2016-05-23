@@ -132,5 +132,4 @@ define('ADMIN_EMAIL', 'clemence@inedits.fr');
 define('EMAIL_PASSWORD', '7kPt4m&4');
 define('CONTRIB_EMAIL', 'contributions@inedits.fr');
 define('AUTHOR_EMAIL', 'auteurs_talentueux@inedits.fr');
-// define('REPORT_ABUSE_EMAIL', 'abus@inedits.fr');
-define('REPORT_ABUSE_EMAIL', 'sebastien.kalinine@gmail.com');
+define('REPORT_ABUSE_EMAIL', 'abus@inedits.fr');
