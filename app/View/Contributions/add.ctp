@@ -1,3 +1,13 @@
+<!-- META -->
+<?php $this->assign('title', 'Ajouter une contribution') ?>
+
+<!-- VIEW BLOCKS -->
+<?php
+  $this->start('cover');
+    echo $this->element('contributions/add-cover');
+  $this->end();
+?>
+
 <section class="container-fluid">
   <div class="container" id="registration">
     <div class="row">
