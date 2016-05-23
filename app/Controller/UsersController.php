@@ -19,6 +19,16 @@ class UsersController extends AppController {
       }
     }
 
+    // Passer la configuration en utilisant 'all'
+    $this->Auth->authenticate = array(
+        AuthComponent::ALL => array(
+          'userModel' => 'User'
+        ),
+        array(
+          'scope' => array('User.status' => 3)
+        )
+    );
+
     // Allowed action for loggedOut users
     $this->Auth->allow(
       'login',
