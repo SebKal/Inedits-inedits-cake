@@ -1,5 +1,5 @@
 <?php $this->assign('title', $tree['Tree']['title']) ?>
-<?php $this->assign('description', 'Découvrez '.$tree['tree']['title'].', sur le réseau social d\'écriture Inédits.') ?>
+<?php $this->assign('description', 'Découvrez '.$tree['Tree']['title'].', sur le réseau social d\'écriture Inédits.') ?>
 
 <div class="container-fluid tree-intro-wrapper">
 	<?php foreach ($contributions as $contrib) : ?>
