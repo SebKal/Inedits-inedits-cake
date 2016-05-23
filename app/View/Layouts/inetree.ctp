@@ -73,6 +73,7 @@
       'vendor/sneakscroll',
       'vendor/cooltree/cooltree',
       'vendor/d3/d3.min',
+      'vendor/d3/d3-tip',
       'vendor/jquery.lazyload',
       'utils/classie',
       'main'
@@ -130,7 +131,7 @@
 
   <!-- Load script in bottom -->
   <?php echo $this->fetch('scriptBottom'); ?>
-  <script src="https://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"></script>
+
   <script>
    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
