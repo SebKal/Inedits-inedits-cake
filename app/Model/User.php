@@ -124,6 +124,7 @@ class User extends AppModel {
   public function getLastUsers($limit=3) {
 
     $users = $this->find('all', array(
+      'conditions'  => array('User.status = 2')
       'order'       => array('User.created DESC'),
       'limit'       => $limit,
       'recursive'   => -1
