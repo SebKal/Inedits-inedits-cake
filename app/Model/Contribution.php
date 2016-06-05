@@ -85,7 +85,7 @@ class Contribution extends AppModel {
 
       $test   = $this->find('all', array(
         'conditions'  => array('Contribution.tree_id' => $treeId),
-        'fields'    => array('User.name', 'User.avatar', 'User.id', 'User.slug'),
+        'fields'    => array('User.name', 'User.last_name', 'User.avatar', 'User.id', 'User.slug'),
         'group'     => 'User.id',
           'limit'         => 3
       ));

@@ -28,7 +28,20 @@
                 <?php if ($contrib['Tree']['users']) : ?>
                     <ul class="list-inline">
                         <?php foreach ($contrib['Tree']['users'] as $value) : ?>
-                            <li><?php echo $value['User']['avatar'] ? $this->Image->resize($value['User']['avatar'] , 50, 50, array('class' => 'img-circle', 'url' => array('controller' => 'users', 'action' => 'profile', 'slug' => $value['User']['slug']) )) : $this->Image->resize('default.jpg', 50, 50, array('class' => 'img-circle', 'url' => array('controller' => 'users', 'action' => 'profile', 'slug' => $value['User']['slug']) )); ?></li>
+                            <li>
+                              <?php
+                                echo $this->element(
+                                  'users/avatar',
+                                  array(
+                                    'user'    => $value['User'],
+                                    'width'   => 50,
+                                    'height'  => 50,
+                                    'class'   => 'img-circle',
+                                    'url'     => array('controller' => 'users', 'action' => 'profile', 'slug' => $value['User']['slug'])
+                                  )
+                                )
+                              ?>
+                            </li>
                         <?php endforeach; ?>
                     </ul>
                 <?php else : ?>
