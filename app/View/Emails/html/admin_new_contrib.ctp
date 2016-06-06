@@ -103,7 +103,30 @@ html { -webkit-text-size-adjust:none; -ms-text-size-adjust: none;}
 					<span style="font-family: Arial, Helvetica, sans-serif; font-size: 17px; color: #4db3a4;">
 						Bonjour
 						<span style="text-transform: capitalize;"><?php echo $author.', '; ?></span>
-						vous propose une contribution, "<?php echo $participation ?>", celle-ci sera lu avec attention, et nous vous recontacterons par la suite.
+						vous propose une contribution "<?php echo $participation ?>".
+            <tr><td align="center">
+              <div style="line-height: 30px;">
+                <font face="Arial, Helvetica, sans-serif" size="5" color="#4db3a4" style="font-size: 17px;">
+                <span style="font-family: Arial, Helvetica, sans-serif; font-size: 17px; color: #4db3a4;">
+                  <?php echo $message ?>
+                  <?php
+                    echo $this->Html->link(
+                      $participation,
+                      array(
+                        'controller'  => 'contributions',
+                        'action'      => 'admin_edit',
+                        'full_base'   => true,
+                        $id
+                      ),
+                      array(
+                        'class'       => 'btn btn-primary'
+                      )
+                    );
+                  ?>
+                </span></font>
+              </div>
+              <!-- padding --><div style="height: 35px; line-height: 35px; font-size: 10px;">&nbsp;</div>
+            </td></tr>
 					</span></font>
 				</div>
 				<!-- padding --><div style="height: 35px; line-height: 35px; font-size: 10px;">&nbsp;</div>

@@ -175,8 +175,14 @@ class ContributionsController extends AppController {
 
             // Mail administrateur
             $Email = new CakeEmail('adminNewContrib');
-            $Email->viewVars( array('participation' => $this->request->data['Contribution']['title'], 'author' => $user['User']['name'].' '.$user['User']['last_name']) )
-              ->send();
+            $Email->viewVars(
+              array(
+                'participation' => $this->request->data['Contribution']['title'],
+                'author'        => $user['User']['name'].' '.$user['User']['last_name'],
+                'id'            => $this->request->data['Contribution']['id']
+              )
+            )
+            ->send();
 
             return $this->redirect(array('controller' => 'trees', 'action' => 'merci', $tree['Tree']['slug']));
 
