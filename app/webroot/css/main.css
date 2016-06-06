@@ -629,7 +629,7 @@ footer .sub-footer ul li {
   padding: 0;
 }
 footer .sub-footer ul li+li:before {
-  content: '-'; margin: 0 5px;
+  content: '·'; margin: 0 5px;
 }
 footer .sub-footer ul li a{
   color: #999999;

@@ -39,7 +39,7 @@
               <div class="col-md-6">
                 <?php
                   echo $this->Html->link(
-                    'Créez votre compte Abonné <strong>Inédits</strong><span class="bubble">1</span>',
+                    'Créez votre compte <strong>Inédits</strong><span class="bubble">1</span>',
                     array(
                       'controller'  => 'users',
                       'action'      => 'register',
