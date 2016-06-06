@@ -70,8 +70,8 @@
                   echo $this->Html->link(
                     'Choisissez l\'histoire qui vous inspire !<span class="bubble">2</span>',
                     array(
-                      'controller'  => 'users',
-                      'action'      => 'register',
+                      'controller'  => 'trees',
+                      'action'      => 'index',
                     ),
                     array(
                       'class'       => 'featurette-heading',
