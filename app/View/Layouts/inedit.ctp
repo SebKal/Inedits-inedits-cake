@@ -48,7 +48,7 @@
     </div>
 
     <div class="contact-modal-wrapper">
-      <a id="contact-modal" data-toggle="modal" href="#contactModal" title="Nous contacter" alt="Contact Buton">Problème, erreur ?<i class="fa fa-info-circle"></i></a>
+      <a id="contact-modal" data-toggle="modal" href="#contactModal" title="Nous contacter" alt="Contact Buton">Un problème, une erreur ?<i class="fa fa-info-circle"></i></a>
     </div>
     <?php echo $this->element('global/contact-modal'); ?>
 

@@ -15,7 +15,7 @@
     )); ?>
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
-          <h4 class="modal-title">Vous avez une recommandation ?</h4>
+          <h4 class="modal-title">Vous avez détecté une erreur, vous avez une recommandation ?</h4>
       </div>
       <div class="modal-body">
         <div class="row">
