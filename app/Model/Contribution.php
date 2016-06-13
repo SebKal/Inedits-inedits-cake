@@ -81,7 +81,7 @@ class Contribution extends AppModel {
       )
     ));
 var_dump($user);
-var_dump($this->user_id);
+var_dump($this);
 exit();
     // Mail administrateur
     $Email = new CakeEmail('adminNewContrib');
