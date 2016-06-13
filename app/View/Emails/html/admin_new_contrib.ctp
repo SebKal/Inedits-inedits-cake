@@ -92,7 +92,7 @@ html { -webkit-text-size-adjust:none; -ms-text-size-adjust: none;}
 				<div style="line-height: 44px;">
 					<font face="Arial, Helvetica, sans-serif" size="5" color="#57697e" style="font-size: 34px;">
 					<span style="font-family: Arial, Helvetica, sans-serif; font-size: 34px; color: #57697e;">
-						Merci de votre participation sur Inédits
+						Une contribution vient d'arriver !
 					</span></font>
 				</div>
 				<!-- padding --><div style="height: 30px; line-height: 30px; font-size: 10px;">&nbsp;</div>
@@ -101,9 +101,9 @@ html { -webkit-text-size-adjust:none; -ms-text-size-adjust: none;}
 				<div style="line-height: 30px;">
 					<font face="Arial, Helvetica, sans-serif" size="5" color="#4db3a4" style="font-size: 17px;">
 					<span style="font-family: Arial, Helvetica, sans-serif; font-size: 17px; color: #4db3a4;">
-						Bonjour
-						<span style="text-transform: capitalize;"><?php echo $author.', '; ?></span>
-						vous propose une contribution "<?php echo $participation ?>".
+						Bonjour,
+						<span style="text-transform: capitalize;"><?php echo $author; ?></span>
+						vous propose une contribution : "<?php echo $participation ?>".
             <tr><td align="center">
               <div style="line-height: 30px;">
                 <font face="Arial, Helvetica, sans-serif" size="5" color="#4db3a4" style="font-size: 17px;">
