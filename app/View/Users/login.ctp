@@ -34,7 +34,7 @@
           <?php echo $this->Form->end(); ?>
         </div>
         <div class="box-footer">
-          <?php echo $this->Html->link('Mot de passe oublié ?', array('controller' => 'users', 'action' => 'forgetPassword')); echo $this->Html->link('Problème de connexion ?', array('controller' => 'users', 'action' => 'forgetPassword')); ?>
+          <?php echo $this->Html->link('Mot de passe oublié ?', array('controller' => 'users', 'action' => 'forgetPassword')); ?>
         </div>
       </div>
     </div>
