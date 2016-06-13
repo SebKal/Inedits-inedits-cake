@@ -83,13 +83,14 @@ class Contribution extends AppModel {
       ));
   var_dump($this->data[$this->alias]['user_id']);
   var_dump($user['User']['name']);
+  var_dump($this]);
   exit();
 
       // Mail administrateur
       $Email = new CakeEmail('adminNewContrib');
       $Email->viewVars(
         array(
-          'participation' => $this->title,
+          'participation' => $this->data[$this->alias]['title'],
           'author'        => $user['User']['name'].' '.$user['User']['last_name'],
           'id'            => $this->id,
         )
