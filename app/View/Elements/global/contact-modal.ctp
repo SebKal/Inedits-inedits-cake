@@ -1,7 +1,7 @@
 <div id="contactModal" class="modal fade" tabindex="-1" data-width="760">
   <?php
     echo $this->Form->create(
-    null,
+    'Contact',
     array(
       'url' => array(
         'controller' => 'contact',
@@ -26,7 +26,7 @@
           </div>
           <div class="col-md-12">
             <div class="form-group">
-              <?php echo $this->Form->input('content');?>
+              <?php echo $this->Form->input('content', array('type' => 'textarea'));?>
             </div>
           </div>
         </div>

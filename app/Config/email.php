@@ -60,7 +60,6 @@ class EmailConfig {
     'transport'     => 'Smtp',
     'to'            => 'sebastien.kalinine@gmail.com',
     'from'          => array(ADMIN_EMAIL => 'Clémence d\'Inedit | La première plateforme d\'écriture collaborative'),
-    'subject'       => 'Inscription sur Inédit',
     'template'      => 'contact',
     'host'          => 'ssl://smtp.gmail.com',
     'port'          => 465,

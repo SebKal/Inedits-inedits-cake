@@ -24,15 +24,14 @@ public function beforeFilter() {
  * @return void
  */
   public function send() {
-    // debug($this->request->data);
-    // exit();
 
     if ($this->request->is('post')) {
-      $values = $this->request->data['User'];
+      $values = $this->request->data['Contact'];
     }
 
     $Email = new CakeEmail('contact');
     $Email
+      ->subject($values['subject'])
       ->viewVars( array('content' => $values['content'] ))
       ->send()
     ;
