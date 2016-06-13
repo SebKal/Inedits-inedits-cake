@@ -80,7 +80,8 @@ class Contribution extends AppModel {
         'User.id' => $this->data[$this->alias]['user_id']
       )
     ));
-
+var_dump($this->data);
+exit();
     // Mail administrateur
     $Email = new CakeEmail('adminNewContrib');
     $Email->viewVars(
