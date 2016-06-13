@@ -1895,11 +1895,15 @@ body.users-register {
 #contact-modal {
   color: #fff;
   padding: .7em;
-  writing-mode: vertical-rl;
   text-orientation: sideways;
   text-transform: uppercase;
   font-size: 17px;
   word-spacing: 5px;
+
+  writing-mode: vertical-rl;
+  -webkit-writing-mode: vertical-rl;
+  -moz-writing-mode: vertical-rl;
+  -ms-writing-mode: vertical-rl;
 }
 #contact-modal:hover {
   text-decoration: none;
