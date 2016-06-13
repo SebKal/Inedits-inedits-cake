@@ -145,8 +145,6 @@ class ContributionsController extends AppController {
               $this->formatFileName($this->Contribution->slug);
             }
 
-var_dump($this->request->data);
-exit();
             // Mail User
             $Email = new CakeEmail('newContrib');
             $Email
@@ -156,16 +154,7 @@ exit();
                 'author'        => $user['User']['name'].' '.$user['User']['last_name']
               ))
               ->send();
-            // Mail administrateur
-            $Email = new CakeEmail('adminNewContrib');
-            $Email->viewVars(
-              array(
-                'participation' => $this->request->data['Contribution']['title'],
-                'author'        => $user['User']['name'].' '.$user['User']['last_name'],
-                'id'            => $this->request->data['Contribution']['id']
-              )
-            )
-            ->send();
+
 
             return $this->redirect(array('controller' => 'trees', 'action' => 'merci', $tree['Tree']['slug']));
 

@@ -73,6 +73,23 @@ class Contribution extends AppModel {
     return true;
   }
 
+  public function afterSave($options = [])
+  {
+    var_dump($this->id);
+    exit();
+    $user = $this->User->find($this->user_id);
+    // Mail administrateur
+    $Email = new CakeEmail('adminNewContrib');
+    $Email->viewVars(
+      array(
+        'participation' => $this->title,
+        'author'        => $user['User']['name'].' '.$user['User']['last_name'],
+        'id'            => $this->id,
+      )
+    )
+    ->send();
+  }
+
   public function isOwnedBy($contributionId, $userId) {
       return $this->field('id', array('id' => $contributionId, 'user_id' => $userId)) !== false;
   }
