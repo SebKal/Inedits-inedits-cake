@@ -1886,6 +1886,11 @@ body.users-register {
   top: 50%;
   left: 0;
   background-color: #333;
+
+  transform: translate(0, -50%);
+  -webkit-transform: translate(0, -50%);
+  -moz-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
 }
 #contact-modal {
   color: #fff;
