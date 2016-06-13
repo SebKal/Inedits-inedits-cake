@@ -80,7 +80,10 @@ class Contribution extends AppModel {
         'User.id' => 1
       )
     ));
-var_dump($user);
+var_dump($this->id);
+var_dump($this->user_id);
+var_dump($this->userId);
+echo '<br>';
 var_dump($this);
 exit();
     // Mail administrateur
