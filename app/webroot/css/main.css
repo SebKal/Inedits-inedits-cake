@@ -1264,6 +1264,19 @@ body.users-index .results {
   background-color: #f2f2f2;
 }
 
+.reset-form-btn {
+  border: none;
+  background-color: #fff;
+  position: absolute;
+  left: 75%;
+  top: 50%;
+
+  transform: translate(0, -50%);
+  -webkit-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  -moz-transform: translate(0, -50%);
+}
+
 .search-cover {
   background: url('img/home-header.jpg') center center no-repeat;
   background-size: cover;
