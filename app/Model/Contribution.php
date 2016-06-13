@@ -83,7 +83,8 @@ class Contribution extends AppModel {
       ));
   var_dump($this->data[$this->alias]['user_id']);
   var_dump($user['User']['name']);
-  var_dump($this]);
+  var_dump($this->data[$this->alias]['title']);
+  var_dump($this->id);
   exit();
 
       // Mail administrateur
