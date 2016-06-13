@@ -75,24 +75,27 @@ class Contribution extends AppModel {
 
   public function afterSave($created, $options = [])
   {
-    $user = $this->User->find('first', array(
-      'conditions'  => array(
-        'User.id' => $this->data[$this->alias]['user_id']
-      )
-    ));
-var_dump($this->data[$this->alias]['user_id']);
-var_dump($user['User']['name']);
+    if (isset($this->data[$this->alias]['user_id'])) {
+      $user = $this->User->find('first', array(
+        'conditions'  => array(
+          'User.id' => $this->data[$this->alias]['user_id']
+        )
+      ));
+  var_dump($this->data[$this->alias]['user_id']);
+  var_dump($user['User']['name']);
+  exit();
 
-    // Mail administrateur
-    $Email = new CakeEmail('adminNewContrib');
-    $Email->viewVars(
-      array(
-        'participation' => $this->title,
-        'author'        => $user['User']['name'].' '.$user['User']['last_name'],
-        'id'            => $this->id,
+      // Mail administrateur
+      $Email = new CakeEmail('adminNewContrib');
+      $Email->viewVars(
+        array(
+          'participation' => $this->title,
+          'author'        => $user['User']['name'].' '.$user['User']['last_name'],
+          'id'            => $this->id,
+        )
       )
-    )
-    ->send();
+      ->send();
+    }
   }
 
   public function isOwnedBy($contributionId, $userId) {
