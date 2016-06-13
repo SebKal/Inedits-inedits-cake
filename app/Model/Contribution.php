@@ -76,8 +76,8 @@ class Contribution extends AppModel {
   public function afterSave($created, $options = [])
   {
     $user = $this->User->find($this->user_id);
-var_dump($this);
 var_dump($user);
+exit();
     // Mail administrateur
     $Email = new CakeEmail('adminNewContrib');
     $Email->viewVars(
