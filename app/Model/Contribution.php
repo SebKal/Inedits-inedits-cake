@@ -75,7 +75,7 @@ class Contribution extends AppModel {
 
   public function afterSave($created, $options = [])
   {
-    $user = $this->User->find('', array(
+    $user = $this->User->find('first', array(
       'conditions'  => array(
         'User.id' => $this->user_id
       )
