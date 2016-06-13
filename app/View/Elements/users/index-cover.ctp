@@ -34,6 +34,7 @@
             )
           );
         ?>
+        <button class="reset-form-btn"><i class="glyphicon glyphicon-remove"></i></button>
         <button class="btn btn-shadow-yellow" type="submit"><i class="glyphicon glyphicon-search"></i></button>
         <div id="resultDiv">
 

@@ -198,6 +198,16 @@ jQuery(document).ready(function($){
     var form      = $('#UserIndexForm');
     var input     = $('#searchUsers');
     var resultDiv = $('#resultDiv');
+    var btn       = $('.reset-form-btn');
+
+    btn.click(function(e){
+      e.preventDefault();
+
+      input.val("");
+      resultDiv.addClass('hide');
+      input.focus();
+
+    });
 
     input.keyup(function(e){
       e.preventDefault();

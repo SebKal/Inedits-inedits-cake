@@ -47,6 +47,9 @@
       <?php echo $this->element('footer/main') ?>
     </div>
 
+    <a data-toggle="modal" href="#contactModal" title="Nous contacter" alt="Contact Buton">Contact us</a>
+    <?php echo $this->element('global/contact-modal'); ?>
+
   <!-- Load script in bottom -->
   <?php echo $this->fetch('scriptBottom'); ?>
 
