@@ -81,8 +81,7 @@ class Contribution extends AppModel {
       )
     ));
 var_dump($this->id);
-var_dump($this->user_id);
-var_dump($this->userId);
+var_dump($this->data[$this->alias]['user_id']);
 echo '<br>';
 var_dump($this);
 exit();
