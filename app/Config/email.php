@@ -58,7 +58,7 @@ class EmailConfig {
 
   public $contact = array(
     'transport'     => 'Smtp',
-    'to'            => 'sebastien.kalinine@gmail.com',
+    'to'            => REPORT_ABUSE_EMAIL,
     'from'          => array(ADMIN_EMAIL => 'Clémence d\'Inedit | La première plateforme d\'écriture collaborative'),
     'template'      => 'contact',
     'host'          => 'ssl://smtp.gmail.com',
