@@ -77,14 +77,10 @@ class Contribution extends AppModel {
   {
     $user = $this->User->find('first', array(
       'conditions'  => array(
-        'User.id' => 1
+        'User.id' => $this->data[$this->alias]['user_id']
       )
     ));
-var_dump($this->id);
-var_dump($this->data[$this->alias]['user_id']);
-echo '<br>';
-var_dump($this);
-exit();
+
     // Mail administrateur
     $Email = new CakeEmail('adminNewContrib');
     $Email->viewVars(
