@@ -132,24 +132,6 @@ class ContributionsController extends AppController {
 
       if ($this->request->is('post') && !empty($this->request->data)) {
 
-          // Check content lenght
-          if ($this->request->data['Contribution']['path_file']['size'] == 0) {
-
-            // Max Length
-            // if (!empty($this->request->data['Contribution']['content']) && strlen($this->request->data['Contribution']['content']) > 7000)
-            // {
-            //   $this->Session->setFlash(__('Le contenu contient trop de caractères'), 'alert-box', array('class'=>'alert-danger'));
-            //   return false;
-            // }
-
-            // // Min Length
-            // if (!empty($this->request->data['Contribution']['content']) && strlen($this->request->data['Contribution']['content']) < 3500)
-            // {
-            //   $this->Session->setFlash(__('Le contenu ne contient pas assez de caractères'), 'alert-box', array('class'=>'alert-danger'));
-            //   return false;
-            // }
-          }
-
           $this->request->data['Contribution']['user_id']   = $userId;
           $this->request->data['Contribution']['tree_id']   = $tree['Tree']['id'];
           $this->request->data['Contribution']['parent_id'] = $parentId;
