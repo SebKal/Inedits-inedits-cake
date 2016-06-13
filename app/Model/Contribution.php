@@ -73,7 +73,7 @@ class Contribution extends AppModel {
     return true;
   }
 
-  public function afterSave($options = [])
+  public function afterSave($created, $options = [])
   {
     var_dump($this->id);
     exit();
