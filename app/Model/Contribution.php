@@ -75,11 +75,7 @@ class Contribution extends AppModel {
 
   public function afterSave($created, $options = [])
   {
-    $user = $this->User->find('first', array(
-      'conditions'  => array(
-        'User.id' => $this->user_id
-      )
-    ));
+    $user = $this->User->find('first');
 var_dump($user);
 exit();
     // Mail administrateur
