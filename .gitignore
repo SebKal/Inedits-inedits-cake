@@ -11,6 +11,8 @@
 /app/webroot/img/avatars/*
 /app/webroot/img/covers/*
 
+aide.inedits.fr/
+
 # Vagrantfile #
 ######################
 .vagrant
