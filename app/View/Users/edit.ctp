@@ -42,7 +42,6 @@
                         <?php echo $this->Form->input('bio', array('div' => '', 'type'=> 'textarea', 'placeholder' => 'Parlez-nous de vous'));?>
                     </div>
                     <button class="btn blue-hoki" type="submit"> Modifier</button>
-              <?php echo $this->Form->end();?>
             </div>
           </div>
         </div>
@@ -119,7 +118,6 @@
                   <?php echo $this->Form->input('social_writting', array('div' => '', 'placeholder' => 'Avez-vous déja participé à un projet similaire ?'));?>
                 </div>
                 <button class="btn blue-hoki" type="submit"> Modifier</button>
-                <?php echo $this->Form->end(); ?>
               </div>
             </div>
           </div>
@@ -129,20 +127,6 @@
         <div class="col-xs-12">
           <div class="portlet light">
             <div class="portlet-body">
-             <?php
-               echo $this->Form->create(
-                'User',
-                array(
-                  'role'          => 'form',
-                  'inputDefaults' => array(
-                      'div'   => false,
-                      'class' => 'form-control',
-                      'label' => false,
-                    ),
-                  'type'  => 'file',
-                  )
-                );
-             ?>
               <div class="row">
                 <div class="col-lg-12"><p class="profile-title">Informations Personnelles</p></div>
                 <div class="col-md-6">
