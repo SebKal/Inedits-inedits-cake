@@ -51,7 +51,7 @@
             <div class="col-xs-6">
               <div class="portlet light">
                 <div class="portlet-body">
-                  <p class="profile-title">Votre auteur préféré</p>
+                  <p class="profile-title">Vos auteurs préférés</p>
                   <?php
                     echo $this->Form->create(
                       'User',
@@ -73,9 +73,9 @@
           <div class="col-xs-6">
             <div class="portlet light">
               <div class="portlet-body">
-              <p class="profile-title">Votre livre favori</p>
+              <p class="profile-title">Vos livre favoris</p>
                 <div class="form-group">
-                  <?php echo $this->Form->input('favorite_book', array('div' => '', 'placeholder' => 'Votre livre'));?>
+                  <?php echo $this->Form->input('favorite_book', array('div' => '', 'placeholder' => 'Vos livres préférés'));?>
                 </div>
               </div>
             </div>

@@ -19,7 +19,7 @@
       <div class="col-xs-6 col-sm-6">
         <div class="portlet light">
           <div class="portlet-body">
-            <p class="profile-title">Auteur préféré</p>
+            <p class="profile-title">Auteurs préférés</p>
             <p><?php echo $user['User']['favorite_author'] ?></p>
           </div>
         </div>
@@ -30,7 +30,7 @@
       <div class="col-xs-6 col-sm-6">
         <div class="portlet light">
           <div class="portlet-body">
-            <p class="profile-title">Livre préféré</p>
+            <p class="profile-title">Livres préférés</p>
             <p><?php echo $user['User']['favorite_book'] ?></p>
           </div>
         </div>
