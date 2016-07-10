@@ -1891,6 +1891,7 @@ body.users-register {
   -webkit-transform: translate(0, -50%);
   -moz-transform: translate(0, -50%);
   -ms-transform: translate(0, -50%);
+  visibility: hidden;
 }
 #contact-modal {
   color: #fff;
@@ -1910,4 +1911,10 @@ body.users-register {
 #contact-modal i {
   padding-top: 13px;
   font-size: 20px;
+}
+
+@media (min-width: 768px) {
+  .contact-modal-wrapper {
+    visibility: visible;
+  }
 }
