@@ -75,9 +75,7 @@ class ContributionsController extends AppController {
         $this->set('contribution', $contribution);
       }
 
-      $parent1 = $this->Contribution->find('first', array(
-          'conditions' => array('Contribution.id' => $contribution['Contribution']['parent_id']),
-      ));
+      $parent1 = $this->Contribution->getParentNode($contribution['Contribution']['id']);
 
       if (!empty($parent1))
       {
@@ -85,9 +83,7 @@ class ContributionsController extends AppController {
 
         if ($parent1['Contribution']['parent_id'])
         {
-          $parent2 = $this->Contribution->find('first', array(
-              'conditions' => array('Contribution.id' => $parent1['Contribution']['parent_id']),
-          ));
+          $parent2 = $this->Contribution->getParentNode($parent1['Contribution']['id']);
           $this->set('parent2', $parent2);
         }
       }
