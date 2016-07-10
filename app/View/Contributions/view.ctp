@@ -21,24 +21,6 @@
                 ?>
                 <i class="fa fa-chevron-right"></i>
               </li>
-              <?php if (isset($parent1)): ?>
-                <li>
-                  <span>
-                    <?php
-                      echo $this->Html->link(
-                        $parent1['Contribution']['title'],
-                        array(
-                          'controller'  => 'contributions',
-                          'action'      => 'view',
-                          'title'       => $parent1['Tree']['slug'],
-                          'slug'        => $parent1['Contribution']['slug']
-                        )
-                      );
-                    ?>
-                  </span>
-                  <i class="fa fa-chevron-right"></i>
-                </li>
-              <?php endif; ?>
               <?php if (isset($parent2)): ?>
                 <li>
                   <span>
@@ -50,6 +32,24 @@
                           'action'      => 'view',
                           'title'       => $parent2['Tree']['slug'],
                           'slug'        => $parent2['Contribution']['slug']
+                        )
+                      );
+                    ?>
+                  </span>
+                  <i class="fa fa-chevron-right"></i>
+                </li>
+              <?php endif; ?>
+              <?php if (isset($parent1)): ?>
+                <li>
+                  <span>
+                    <?php
+                      echo $this->Html->link(
+                        $parent1['Contribution']['title'],
+                        array(
+                          'controller'  => 'contributions',
+                          'action'      => 'view',
+                          'title'       => $parent1['Tree']['slug'],
+                          'slug'        => $parent1['Contribution']['slug']
                         )
                       );
                     ?>
