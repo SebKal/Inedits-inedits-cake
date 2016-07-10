@@ -53,6 +53,10 @@ Global
   opacity: 0;
   visibility: hidden;
 }
+.alert-beta {
+  position: relative;
+  margin: 0;
+}
 
 /* =========================================================
 ==TYPO

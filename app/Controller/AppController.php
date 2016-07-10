@@ -53,6 +53,14 @@ class AppController extends Controller {
 
     parent::beforeFilter();
 
+    // First Visit
+    if ($this->Session->read('firstVisit'))
+    {
+      $this->set('firstVisit', false);
+    }else {
+      $this->set('firstVisit', true);
+    }
+
     // Le précieux Sésame
     if ($this->request->url == "sesamOuvresToi"){
       $this->Session->write('sesam', true);
@@ -152,6 +160,12 @@ class AppController extends Controller {
 
     // Set global views data
     $this->set('currentUser', $this->Auth->user());
+  }
+
+  public function afterFilter() {
+    parent::afterFilter();
+
+    $this->Session->write('firstVisit', true);
   }
 
   public function isAuthorized($user) {
