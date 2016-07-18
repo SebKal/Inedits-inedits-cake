@@ -39,7 +39,7 @@
                   );
               ?>
                 <div class="form-group">
-                        <?php echo $this->Form->input('bio', array('div' => '', 'type'=> 'textarea', 'placeholder' => 'Parlez-nous de vous'));?>
+                        <?php echo $this->Form->input('bio', array('div' => '', 'type'=> 'textarea', 'placeholder' => 'Ce que vous faites dans la vie, textes publiés, manuscrits sous le coude, projets en cours...'));?>
                     </div>
                     <button class="btn blue-hoki" type="submit"> Modifier</button>
             </div>
@@ -73,7 +73,7 @@
           <div class="col-xs-6">
             <div class="portlet light">
               <div class="portlet-body">
-              <p class="profile-title">Vos livre favoris</p>
+              <p class="profile-title">Vos livres favoris</p>
                 <div class="form-group">
                   <?php echo $this->Form->input('favorite_book', array('div' => '', 'placeholder' => 'Vos livres préférés'));?>
                 </div>
