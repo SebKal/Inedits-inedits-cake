@@ -98,7 +98,8 @@
               </div>
             </div>
           </div>
-          <button class="btn btn-block blue-hoki margin-top-10" type="submit">Modifier</
+          <?php echo $this->Form->hidden('slug', array('value' => $contribution['Contribution']['slug']));?>
+          <button class="btn btn-block blue-hoki margin-top-10" type="submit">Modifier</button>
           <?php echo $this->Form->end();?>
         </div>
       </div>
