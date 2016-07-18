@@ -30,7 +30,7 @@
                         array(
                           'controller'  => 'contributions',
                           'action'      => 'view',
-                          'title'       => $parent1['Tree']['slug'],
+                          'title'       => $contribution['Tree']['slug'],
                           'slug'        => $parent2['Contribution']['slug']
                         )
                       );
@@ -48,7 +48,7 @@
                         array(
                           'controller'  => 'contributions',
                           'action'      => 'view',
-                          'title'       => $parent1['Tree']['slug'],
+                          'title'       => $contribution['Tree']['slug'],
                           'slug'        => $parent1['Contribution']['slug']
                         )
                       );
