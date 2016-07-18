@@ -9,7 +9,7 @@
           <h1><?php echo $contribution['Contribution']['title']; ?></h1>
           <div class="contrib-meta">
             <ul class="list-unstyled list-inline">
-              <li>
+              <!-- <li>
                 Arbre:
                 <?php
                   echo $this->Html->link(
@@ -20,7 +20,7 @@
                   ));
                 ?>
                 <i class="fa fa-chevron-right"></i>
-              </li>
+              </li> -->
               <?php if (isset($parent2)): ?>
                 <li>
                   <span>
@@ -30,7 +30,7 @@
                         array(
                           'controller'  => 'contributions',
                           'action'      => 'view',
-                          'title'       => $parent2['Tree']['slug'],
+                          'title'       => $parent1['Tree']['slug'],
                           'slug'        => $parent2['Contribution']['slug']
                         )
                       );
