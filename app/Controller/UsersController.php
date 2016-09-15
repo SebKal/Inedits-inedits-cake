@@ -361,7 +361,7 @@ class UsersController extends AppController {
 
   public function admin_index() {
 
-      $this->set('users', $this->paginate());
+      $this->set('users', $this->User->find('all'));
   }
 
   public function admin_edit($id = null) {
