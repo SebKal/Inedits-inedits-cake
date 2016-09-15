@@ -1,6 +1,5 @@
 <!-- BEGIN CONTAINER -->
 <div class="page-container">
-<?php var_dump($users); exit(); ?>
     <?php echo $this->element('dashboard/dashboard-sidebar'); ?>
 
     <!-- BEGIN CONTENT -->
