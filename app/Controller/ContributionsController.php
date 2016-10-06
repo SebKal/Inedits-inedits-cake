@@ -437,22 +437,23 @@ class ContributionsController extends AppController {
               'conditions'    => array('Contribution.id' => $contribution['Contribution']['parent_id']),
             ));
             $previousUser     = $this->Contribution->User->find('first', array(
-              'conditions'    => array('User.id' => $previousContrib['Contribution']['user_id']),
+              'conditions'    => array('User.id' => 1),
             ));
           }
-var_dump($previousUser);
-exit();
+
           $Email = new CakeEmail('approveContribPrevious');
-          $Email->to($user['User']['mail'])
+          $Email->to($previousUser['User']['mail'])
                   ->viewVars( array(
-                    'title'       => $contribution['Contribution']['title'],
-                    'contribSlug' => $contribution['Contribution']['slug'],
-                    'treeSlug'    => $contribution['Tree']['slug'] ,
-                    'author'      => $user['User']['name'].' '.$user['User']['last_name']
+                    'title'         => $contribution['Contribution']['title'],
+                    'contribSlug'   => $contribution['Contribution']['slug'],
+                    'treeSlug'      => $contribution['Tree']['slug'] ,
+                    'author'        => $user['User']['name'].' '.$user['User']['last_name'],
+                    'previousAuthor'=> $previousUser['User']['name'].' '.$previousUser['User']['last_name'],
+                    'previousTitle' => $previousContrib['Contribution']['title'],
                   ))
                   ->send();
 
-          $this->Session->setFlash(__('Votre proposition nous est bien parvenue, nous vous recontacterons lorsqu\'une modération aura été effectuée.'), 'alert-box', array('class'=>'alert-success'));
+          // $this->Session->setFlash(__('Votre proposition nous est bien parvenue, nous vous recontacterons lorsqu\'une modération aura été effectuée.'), 'alert-box', array('class'=>'alert-success'));
           $this->Session->setFlash(__('Contribution approuvée'), 'alert-box', array('class'=>'alert-success'));
 
           return $this->redirect($this->referer());
