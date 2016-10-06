@@ -101,9 +101,9 @@ class DATABASE_CONFIG {
     'datasource' => 'Database/Mysql',
     'persistent' => false,
     'host' => '127.0.0.1',
-    'login' => 'digitalmaster',
-    'password' => 'nWt5^8d7',
-    'database' => 'master_prod',
+    'login' => 'mastercoders',
+    'password' => 'hTzv331@',
+    'database' => 'master_of_the_code',
     'prefix' => 'bake_',
     'encoding' => 'utf8',
   );
@@ -113,8 +113,8 @@ class DATABASE_CONFIG {
     'persistent' => false,
     'host' => '127.0.0.1',
     'login' => 'root',
-    'password' => 'root',
-    'database' => 'scotchbox',
+    'password' => '',
+    'database' => 'inedits-cake',
     'prefix' => 'bake_',
     'encoding' => 'utf8',
   );
