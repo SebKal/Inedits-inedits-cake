@@ -102,8 +102,8 @@ html { -webkit-text-size-adjust:none; -ms-text-size-adjust: none;}
           <font face="Arial, Helvetica, sans-serif" size="5" color="#4db3a4" style="font-size: 17px;">
           <span style="font-family: Arial, Helvetica, sans-serif; font-size: 17px; color: #4db3a4;">
             Bonjour
-            <span style="text-transform: capitalize;"><?php echo $author.', '; ?></span>
-            nous vous informons que votre contribution "<?php echo $title ?>", a été très appréciée par notre équipe. Découvrez-la en cliquant sur le bouton ci-dessous.
+            <span style="text-transform: capitalize;"><?php echo $previousAuthor.', '; ?></span>
+            nous vous informons qu'une suite à été publiée pour votre contribution "<?php echo $previousTitle ?>", Découvrez-la en cliquant sur le bouton ci-dessous.
           </span></font>
         </div>
         <!-- padding --><div style="height: 35px; line-height: 35px; font-size: 10px;">&nbsp;</div>
