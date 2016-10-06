@@ -440,8 +440,6 @@ class ContributionsController extends AppController {
               'conditions'    => array('User.id' => $previousContrib['Contribution']['user_id']),
             ));
           }
-var_dump($contribution['Contribution']['parent_id']);
-var_dump($previousContrib);
 var_dump($previousUser);
 exit();
           $Email = new CakeEmail('approveContribPrevious');
