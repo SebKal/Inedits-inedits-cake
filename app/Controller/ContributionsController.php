@@ -434,9 +434,9 @@ class ContributionsController extends AppController {
           $previousContrib  = $this->Contribution->find('first', array(
             'conditions'    => array('Contribution.parent_id' => $contribution['Contribution']['parent_id']),
           ));
-          $previousUser     = $this->Contribution->User->find('first', array(
-            'conditions'    => array('Contribution.parent_id' => $previousContrib['Contribution']['user_id']),
-          ));
+          // $previousUser     = $this->Contribution->User->find('first', array(
+          //   'conditions'    => array('Contribution.parent_id' => $previousContrib['Contribution']['user_id']),
+          // ));
 var_dump($contribution['Contribution']['parent_id']);
 var_dump($previousContrib);
 var_dump($previousUser);
