@@ -431,12 +431,15 @@ class ContributionsController extends AppController {
           //         ->viewVars( array('title' => $contribution['Contribution']['title'], 'contribSlug' => $contribution['Contribution']['slug'], 'treeSlug' => $contribution['Tree']['slug'] , 'author' => $user['User']['name'].' '.$user['User']['last_name']) )
           //         ->send();
           // Previous Author email
-          $previousContrib  = $this->Contribution->find('first', array(
-            'conditions'    => array('Contribution.parent_id' => $contribution['Contribution']['parent_id']),
-          ));
-          // $previousUser     = $this->Contribution->User->find('first', array(
-          //   'conditions'    => array('Contribution.parent_id' => $previousContrib['Contribution']['user_id']),
-          // ));
+          if ($contribution['Contribution']['parent_id'])
+          {
+            $previousContrib  = $this->Contribution->find('first', array(
+              'conditions'    => array('Contribution.id' => $contribution['Contribution']['parent_id']),
+            ));
+            $previousUser     = $this->Contribution->User->find('first', array(
+              'conditions'    => array('User.id' => $previousContrib['Contribution']['user_id']),
+            ));
+          }
 var_dump($contribution['Contribution']['parent_id']);
 var_dump($previousContrib);
 var_dump($previousUser);
