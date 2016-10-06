@@ -425,13 +425,31 @@ class ContributionsController extends AppController {
         ));
 
         if ($this->Contribution->saveField('status', 3)) {
+          // Author email
           $Email = new CakeEmail('approveContrib');
-            $Email->to($user['User']['mail'])
-                    ->viewVars( array('title' => $contribution['Contribution']['title'], 'contribSlug' => $contribution['Contribution']['slug'], 'treeSlug' => $contribution['Tree']['slug'] , 'author' => $user['User']['name'].' '.$user['User']['last_name']) )
-                    ->send();
-            $this->Session->setFlash(__('Votre proposition nous est bien parvenue, nous vous recontacterons lorsqu\'une modération aura été effectuée.'), 'alert-box', array('class'=>'alert-success'));
-            $this->Session->setFlash(__('Contribution approuvée'), 'alert-box', array('class'=>'alert-success'));
-            return $this->redirect($this->referer());
+          $Email->to($user['User']['mail'])
+                  ->viewVars( array('title' => $contribution['Contribution']['title'], 'contribSlug' => $contribution['Contribution']['slug'], 'treeSlug' => $contribution['Tree']['slug'] , 'author' => $user['User']['name'].' '.$user['User']['last_name']) )
+                  ->send();
+          // Previous Author email
+          $previousContrib  = $this->Contribution->find($contribution['Contribution']['parent_id']);
+          $previousUser     = $this->Contribution->User->find($previousContrib['Contribution']['user_id']);
+var_dump($previousContrib);
+var_dump($previousUser);
+exit();
+          $Email = new CakeEmail('approveContribPrevious');
+          $Email->to($user['User']['mail'])
+                  ->viewVars( array(
+                    'title'       => $contribution['Contribution']['title'],
+                    'contribSlug' => $contribution['Contribution']['slug'],
+                    'treeSlug'    => $contribution['Tree']['slug'] ,
+                    'author'      => $user['User']['name'].' '.$user['User']['last_name']
+                  ))
+                  ->send();
+
+          $this->Session->setFlash(__('Votre proposition nous est bien parvenue, nous vous recontacterons lorsqu\'une modération aura été effectuée.'), 'alert-box', array('class'=>'alert-success'));
+          $this->Session->setFlash(__('Contribution approuvée'), 'alert-box', array('class'=>'alert-success'));
+
+          return $this->redirect($this->referer());
         }
 
         $this->Session->setFlash(__('La contribution n\'a pas été approuvée. Merci de réessayer.'), 'alert-box', array('class'=>'alert-danger'));

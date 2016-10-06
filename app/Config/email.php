@@ -159,6 +159,23 @@ class EmailConfig {
 		'headerCharset' => 'utf-8',
 	);
 
+  public $approveContribPrevious = array(
+    'transport' => 'Smtp',
+    'from' => array(ADMIN_EMAIL => 'Inedit | La première plateforme d\'écriture collaborative'),
+    'subject' => 'Participation à Inedits',
+    'template' => 'approve_contrib_previous',
+    'host' => 'ssl://smtp.gmail.com',
+    'port' => 465,
+    'timeout' => 30,
+    'username' => ADMIN_EMAIL,
+    'password' => EMAIL_PASSWORD,
+    'client' => null,
+    'log' => false,
+    'emailFormat' =>  'html',
+    'charset' => 'utf-8',
+    'headerCharset' => 'utf-8',
+  );
+
 	public $denyContrib = array(
 		'transport' => 'Smtp',
 		'from' => array(ADMIN_EMAIL => 'Inedit | La première plateforme d\'écriture collaborative'),
