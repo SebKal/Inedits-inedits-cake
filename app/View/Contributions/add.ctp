@@ -110,9 +110,9 @@
             </div>
           </div>
         </div>
-        <div class="col-xs-12 col-sm-3 col-sm-offset-1 info-participer">
+        <div class="col-xs-12 col-sm-3 col-sm-offset-1 info-participer advice">
           <p class="icon-wrapper"><i class="glyphicon glyphicon-info-sign"></i></p>
-          <p class="advice">Conseil</p>
+          <p class="warn">Conseil</p>
           <p>- Faites intervenir au moins UN des protagonistes impliqués dans l’histoire</p>
           <p>- Ne négligez aucun élément/détail mentionné dans les contributions précédentes : efforcez-vous au contraire de les reprendre à votre compte au profit de votre propre récit</p>
           <p>- Evitez les ruptures de style ou de ton trop marquées, qui pourraient nuire à la continuité de l’ensemble.</p>
