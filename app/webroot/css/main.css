@@ -841,7 +841,8 @@ input.form-error {
   padding: 0;
   text-align: center;
 }
-.info-participer.advice .warn {
+.info-participer.advice .warn,
+.info-participer.advice .icon-wrapper {
   color: #f5b75a;
 }
 .info-participer p {
