@@ -21,7 +21,10 @@
         <div class="row">
           <div class="col-md-6">
             <div class="form-group">
-              <?php echo $this->Form->input('subject', array('label' => 'Objet') );?>
+              <?php echo $this->Form->input('subject', array('label' => 'Objet') ); ?>
+            </div>
+            <div class="form-group">
+              <?php echo $this->Form->input('mail', array('label' => 'Votre adresse email') ); ?>
             </div>
           </div>
           <div class="col-md-12">

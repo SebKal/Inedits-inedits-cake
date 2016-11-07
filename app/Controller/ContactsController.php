@@ -32,7 +32,10 @@ public function beforeFilter() {
     $Email = new CakeEmail('contact');
     $Email
       ->subject($values['subject'])
-      ->viewVars( array('content' => $values['content'] ))
+      ->viewVars( array(
+        'content' => $values['content'],
+        'mail'    => $values['mail'],
+      ))
       ->send()
     ;
     $this->Session->setFlash(__('Merci de votre aide'), 'alert-box', array('class'=>'alert-success'));

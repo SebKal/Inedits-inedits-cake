@@ -104,6 +104,9 @@ html { -webkit-text-size-adjust:none; -ms-text-size-adjust: none;}
             <?php echo $content ?>
           </span></font>
         </div>
+        <p>
+          <?php echo $mail ?>
+        </p>
         <!-- padding --><div style="height: 35px; line-height: 35px; font-size: 10px;">&nbsp;</div>
       </td></tr>
       <tr><td align="center">
