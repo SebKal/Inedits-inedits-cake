@@ -9,7 +9,7 @@
 				<p class="bubble-title"><?php echo $contrib['Contribution']['title']; ?></p>
 				<p class="bubble-sub-title">Extrait</p>
 				<p>
-				<?php echo $this->Text->truncate($contrib['Contribution']['content'], 400, array('ellipsis' => '...', 'exact' =>false)); ?>
+				<?php echo $this->Text->truncate($contrib['Contribution']['content'], 600, array('ellipsis' => '...', 'exact' =>false)); ?>
 				</p>
 				<?php echo $this->Html->link('voir', array('controller' => 'contributions', 'action' => 'view', 'slug' => $contrib['Contribution']['slug'], 'title' => $tree['Tree']['slug']), array('id' => 'getTreeLink')) ?>
 			</div>
