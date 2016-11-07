@@ -54,9 +54,9 @@
         <li>
           <a href="http://editionsinedits.com" target="_blank">Nos éditions</a>
         </li>
-        <li>
+<!--         <li>
           <a href="http://aide.inedits.fr">Aide</a>
-        </li>
+        </li> -->
       </ul>
     </div>
   </div>
