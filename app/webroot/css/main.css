@@ -831,6 +831,13 @@ input.form-error {
   padding: 0;
 }
 .info-participer .warn {
+  color: #dd9933;
+  font-size: 25px;
+  margin:0 0 10px;
+  padding: 0;
+  text-align: center;
+}
+.info-participer .advice {
   color: #4d5479;
   font-size: 25px;
   margin:0 0 10px;

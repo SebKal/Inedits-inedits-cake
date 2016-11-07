@@ -112,6 +112,13 @@
         </div>
         <div class="col-xs-12 col-sm-3 col-sm-offset-1 info-participer">
           <p class="icon-wrapper"><i class="glyphicon glyphicon-info-sign"></i></p>
+          <p class="advice">Conseil</p>
+          <p>- Faites intervenir au moins UN des protagonistes impliqués dans l’histoire</p>
+          <p>- Ne négligez aucun élément/détail mentionné dans les contributions précédentes : efforcez-vous au contraire de les reprendre à votre compte au profit de votre propre récit</p>
+          <p>- Evitez les ruptures de style ou de ton trop marquées, qui pourraient nuire à la continuité de l’ensemble.</p>
+        </div>
+        <div class="col-xs-12 col-sm-3 col-sm-offset-1 info-participer">
+          <p class="icon-wrapper"><i class="glyphicon glyphicon-warning-sign"></i></p>
           <p class="warn">Important</p>
           <p>
             - Toutes les contributions sont validées par notre équipe.
