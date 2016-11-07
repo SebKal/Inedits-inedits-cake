@@ -820,6 +820,7 @@ input.form-error {
 }
 .info-participer.advice {
   background-color: #dd9933;
+  margin-bottom: 2em;
 }
 .info-participer .icon-wrapper {
   color: #4d5479;
@@ -834,7 +835,7 @@ input.form-error {
   padding: 0;
 }
 .info-participer .warn {
-  color: #dd9933;
+  color: #4d5479;
   font-size: 25px;
   margin:0 0 10px;
   padding: 0;
