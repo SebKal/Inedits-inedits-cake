@@ -106,7 +106,7 @@ class Contribution extends AppModel {
   public function getTreeAuthors($treeId = null) {
 
       $test   = $this->find('all', array(
-        'conditions'  => array('Contribution.tree_id' => $treeId),
+        'conditions'  => array('Contribution.tree_id' => $treeId, 'User.contribution_count >' => 0),
         'fields'    => array('User.name', 'User.last_name', 'User.avatar', 'User.id', 'User.slug'),
         'group'     => 'User.id',
           'limit'         => 3
