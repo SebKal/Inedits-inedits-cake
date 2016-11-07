@@ -841,6 +841,9 @@ input.form-error {
   padding: 0;
   text-align: center;
 }
+.info-participer.advice .warn {
+  color: #f5b75a;
+}
 .info-participer p {
   line-height: 1.5;
   padding: 10px 10px 0;
