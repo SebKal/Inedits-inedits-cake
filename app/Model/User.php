@@ -76,8 +76,27 @@ class User extends AppModel {
         'message'     => 'Nom requis',
       ),
       'clean'     => array(
-        'rule'        => array('custom', '/^[a-za-zàáâäçèéêëìíîïñòóôöùúûü\'\- ]+$/i')
-      )
+        'rule'        => array('custom', '/^[a-za-zàáâäçèéêëìíîïñòóôöùúûü\'\- ]+$/i'),
+        'message'     => 'invalide',
+      ),
+      'length'  => array(
+        'rule'        => array('minLength', '3'),
+        'message'     => '3 caractères minimum'
+      ),
+    ),
+    'last_name' => array(
+      'required'  => array(
+        'rule'        => array('notBlank'),
+        'message'     => 'Nom requis',
+      ),
+      'clean'     => array(
+        'rule'        => array('custom', '/^[a-za-zàáâäçèéêëìíîïñòóôöùúûü\'\- ]+$/i'),
+        'message'     => 'invalide',
+      ),
+      'length'    => array(
+        'rule'        => array('minLength', '3'),
+        'message'     => '3 caractères minimum'
+      ),
     )
   );
 
