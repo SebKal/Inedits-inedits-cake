@@ -163,7 +163,7 @@ var TableManaged = function () {
                 }
             },
             "order": [
-                [2, "desc"]
+                [3, "desc"]
             ] // set first column as a default sort by asc
         });
 
