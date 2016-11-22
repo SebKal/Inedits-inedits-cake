@@ -115,9 +115,9 @@
                                             <?php echo $user['User']['mail']; ?>
                                         </td>
                                         <td>
-                                            <span class="hide"><?php echo date('Y-m-d H:i' ,strtotime($user['User']['created'])); ?></span>
-                                            <?php echo date('d-m-Y H:i' ,strtotime($user['User']['created'])); ?>
-                                            <?php echo new \DateTime($user['User']['created'])->format('d-m-Y h:i:s') ?>
+                                            <?php $date = new \DateTime($user['User']['created']) ?>
+                                            <span class="hide"><?php echo $date->format('Y-m-d h:i:s') ?></span>
+                                            <?php echo $date->format('d-m-Y h:i:s') ?>
                                         </td>
                                         <td class="center">
                                              <?php echo $user['Role']['title']; ?>
