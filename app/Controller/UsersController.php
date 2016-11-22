@@ -361,7 +361,7 @@ class UsersController extends AppController {
 
   public function admin_index() {
 
-      $this->set('users', $this->User->find('all'));
+      $this->set('users', $this->User->find('all', array('order' => array('User.created DESC'),)));
   }
 
   public function admin_edit($id = null) {
