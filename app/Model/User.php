@@ -76,7 +76,7 @@ class User extends AppModel {
         'message'     => 'Nom requis',
       ),
       'clean'     => array(
-        'rule'        => array('custom', '/^[a-z]+$/i/w')
+        'rule'        => array('custom', '/^[a-zé]+$/i')
       )
     )
   );
