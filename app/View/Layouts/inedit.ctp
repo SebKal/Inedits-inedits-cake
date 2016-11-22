@@ -33,6 +33,14 @@
           Ce site est encore en développement. N’hésitez pas à nous faire savoir si vous rencontrez un bug. Merci de votre aide :)
         </div>
       <?php endif; ?>
+
+      <div class="alert alert-ie alert-warning">
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        Votre navigateur est trop ancien pour profiter de l'intégralité des fonctionnalités, veuillez s'il vous plaît utiliser un navigateur plus récent.
+      </div>
+
       <?php echo $this->element('nav/main'); ?>
       <?php echo $this->fetch('cover') ?>
       <?php echo $this->Session->flash(); ?>

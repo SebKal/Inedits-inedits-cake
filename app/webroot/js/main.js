@@ -234,4 +234,20 @@ jQuery(document).ready(function($){
 
   }(window));
 
+  (function(window){
+
+    // Internet Explorer 6-11
+    var isIE = /*@cc_on!@*/false || !!document.documentMode;
+    // Chrome 1+
+    var isChrome = !!window.chrome && !!window.chrome.webstore;
+
+    if (isChrome) {
+      var alert = $('.alert-ie');
+      alert.removeClass('hide');
+    }
+
+    console.log(isIE);
+
+  }(window));
+
 });
