@@ -79,9 +79,6 @@
                             <table class="table table-striped table-bordered table-hover" id="sample_2">
                             <thead>
                             <tr>
-                                <!-- <th class="table-checkbox">
-                                    <input type="checkbox" class="group-checkable" data-set="#sample_2 .checkboxes"/>
-                                </th> -->
                                 <th>
                                      Nom
                                 </th>
@@ -108,9 +105,6 @@
                             <tbody>
                                 <?php foreach ($users as $user) : ?>
                                     <tr class="odd gradeX">
-                                        <!-- <td>
-                                            <input type="checkbox" class="checkboxes" value="<?php echo $user['User']['id']; ?>"/>
-                                        </td> -->
                                         <td>
                                             <?php echo $user['User']['last_name']; ?>
                                         </td>
