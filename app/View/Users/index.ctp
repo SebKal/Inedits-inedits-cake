@@ -41,11 +41,7 @@
                 <p><?php echo $this->Text->truncate($value['User']['bio'], 100, array('ellipsis' => '...', 'exact' => true)); ?></p>
               </div>
               <div class="user-portlet-addon">
-                <span>Branches écrites : </span>
-                <span><b><?php echo $value['User']['contribution_count']; ?></b></span>
-              </div>
-              <div class="user-portlet-addon">
-                <span>Nouvelles éditées : </span>
+                <span>Contributions écrites : </span>
                 <span><b><?php echo $value['User']['contribution_count']; ?></b></span>
               </div>
               <div class="user-portlet-footer">
