@@ -74,6 +74,10 @@ class User extends AppModel {
       'required'  => array(
         'rule'        => array('notBlank'),
         'message'     => 'Nom requis',
+      ),
+      'clean'  => array(
+        'rule'        => array('custom', '/^[a-z]$/i'),
+        'message'     => 'Nom invalide',
       )
     )
   );
