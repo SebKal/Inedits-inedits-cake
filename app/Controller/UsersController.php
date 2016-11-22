@@ -216,7 +216,7 @@ class UsersController extends AppController {
         $Email = new CakeEmail('newUser');
         $Email
           ->viewVars( array(
-            'user'  => $this->request->data['User']['name'].' '.$this->request->data['User']['last_name'],
+            'user'  => $this->request->data['User']['name'].' '.$this->request->data['User']['last_name']
           )
           ->send();
 
