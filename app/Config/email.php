@@ -124,6 +124,24 @@ class EmailConfig {
 		'headerCharset' => 'utf-8',
 	);
 
+    public $newUser = array(
+        'transport' => 'Smtp',
+        'to' => CONTRIB_EMAIL,
+        'from' => array(ADMIN_EMAIL => 'Inedit | La première plateforme d\'écriture collaborative'),
+        'subject' => 'Inscription sur Inedits',
+        'template' => 'new_user',
+        'host' => 'ssl://smtp.gmail.com',
+        'port' => 465,
+        'timeout' => 30,
+        'username' => ADMIN_EMAIL,
+        'password' => EMAIL_PASSWORD,
+        'client' => null,
+        'log' => false,
+        'emailFormat' =>  'html',
+        'charset' => 'utf-8',
+        'headerCharset' => 'utf-8',
+    );
+
 	public $adminNewContrib = array(
 		'transport' => 'Smtp',
 		'to' => CONTRIB_EMAIL,

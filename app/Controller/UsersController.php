@@ -212,6 +212,14 @@ class UsersController extends AppController {
           )
           ->send();
 
+        // generate verif email
+        $Email = new CakeEmail('newUser');
+        $Email
+          ->viewVars( array(
+            'user'  => $this->request->data['User']['name'].' '.$this->request->data['User']['last_name'],
+          )
+          ->send();
+
         $this->Session->setFlash(__('Un E-mail de confirmation à été envoyé à l\'adresse '.$this->request->data['User']['mail']), 'alert-box', array('class'=>'alert-info'));
 
         return $this->redirect(array('controller' => 'pages', 'action' => 'display', 'bienvenue' ));
