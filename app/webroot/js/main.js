@@ -241,10 +241,7 @@ jQuery(document).ready(function($){
     // Chrome 1+
     var isChrome = !!window.chrome && !!window.chrome.webstore;
 
-console.log(isIE);
-console.log(isChrome);
-
-    if (isIE) {
+    if (isChrome) {
       var alert = $('.alert-ie');
       alert.removeClass('hide');
     }

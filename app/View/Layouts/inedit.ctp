@@ -34,7 +34,7 @@
         </div>
       <?php endif; ?>
 
-      <div class="alert alert-ie alert-warning">
+      <div class="alert alert-ie alert-warning hide">
         <button type="button" class="close" data-dismiss="alert" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
