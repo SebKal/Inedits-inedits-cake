@@ -74,10 +74,6 @@ class User extends AppModel {
       'required'  => array(
         'rule'        => array('notBlank'),
         'message'     => 'Nom requis',
-      ),
-      'clean'  => array(
-        'rule'        => array('custom', "^([a-z]+(( |')[a-z]+)*)+([-]([a-z]+(( |')[a-z]+)*)+)*$"),
-        'message'     => 'Nom invalide',
       )
     )
   );
