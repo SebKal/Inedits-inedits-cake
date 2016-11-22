@@ -116,8 +116,8 @@
                                         </td>
                                         <td>
                                             <?php $date = new \DateTime($user['User']['created']) ?>
-                                            <span class="hide"><?php echo $date->format('Y-m-d h:i:s') ?></span>
-                                            <?php echo $date->format('d-m-Y h:i:s') ?>
+                                            <span class="hide"><?php echo $date->format('Y-m-d h:i') ?></span>
+                                            <?php echo $date->format('d-m-Y h:i') ?>
                                         </td>
                                         <td class="center">
                                              <?php echo $user['Role']['title']; ?>
