@@ -41,7 +41,7 @@ var TableAdvanced = function () {
             //},
 
             "order": [
-                [0, 'asc']
+                [4, 'asc']
             ],
 
             "lengthMenu": [
@@ -116,7 +116,7 @@ var TableAdvanced = function () {
             },
 
             "order": [
-                [3, 'desc']
+                [4, 'desc']
             ],
             "lengthMenu": [
                 [5, 15, 20, -1],
@@ -356,7 +356,7 @@ var TableAdvanced = function () {
             "scrollY": "300",
             "deferRender": true,
             "order": [
-                [0, 'asc']
+                [4, 'asc']
             ],
             "lengthMenu": [
                 [5, 15, 20, -1],

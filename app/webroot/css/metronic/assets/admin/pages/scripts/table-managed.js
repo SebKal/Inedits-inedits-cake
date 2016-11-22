@@ -149,8 +149,8 @@ var TableManaged = function () {
                 "targets": [0]
             }],
             "order": [
-                [3, "desc"]
-            ] // set first column as a default sort by asc
+                [4, "desc"]
+            ]
         });
 
         var tableWrapper = jQuery('#sample_2_wrapper');
