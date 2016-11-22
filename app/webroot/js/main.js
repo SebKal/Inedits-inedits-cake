@@ -241,12 +241,10 @@ jQuery(document).ready(function($){
     // Chrome 1+
     var isChrome = !!window.chrome && !!window.chrome.webstore;
 
-    if (isChrome) {
+    if (isIE) {
       var alert = $('.alert-ie');
       alert.removeClass('hide');
     }
-
-    console.log(isIE);
 
   }(window));
 
