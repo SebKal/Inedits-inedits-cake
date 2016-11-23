@@ -83,15 +83,15 @@ class Contribution extends AppModel {
       ));
 
       // Mail administrateur
-      // $Email = new CakeEmail('adminNewContrib');
-      // $Email->viewVars(
-      //   array(
-      //     'participation' => $this->data[$this->alias]['title'],
-      //     'author'        => $user['User']['name'].' '.$user['User']['last_name'],
-      //     'id'            => $this->id,
-      //   )
-      // )
-      // ->send();
+      $Email = new CakeEmail('adminNewContrib');
+      $Email->viewVars(
+        array(
+          'participation' => $this->data[$this->alias]['title'],
+          'author'        => $user['User']['name'].' '.$user['User']['last_name'],
+          'id'            => $this->id,
+        )
+      )
+      ->send();
     }
   }
 
