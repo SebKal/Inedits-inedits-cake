@@ -74,7 +74,7 @@
       <div class="col-xs-6 col-sm-6">
         <div class="portlet light">
           <div class="portlet-body">
-            <p class="profile-title">En quoi l'écriture le motive-t-elle ?</p>
+            <p class="profile-title">En quoi l'écriture vous motive-t-elle ?</p>
             <p><?php echo $user['User']['social_writting'] ?></p>
           </div>
         </div>
