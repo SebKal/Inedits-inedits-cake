@@ -1,5 +1,5 @@
 <div class="col-xs-12 col-sm-9 profile-content">
-  <p class="user-name"><?php echo $user['User']['name'].' '.$user['User']['last_name']; ?></p>
+  <p class="user-name"><?php echo ucfirst($user['User']['name']).' '.ucfirst($user['User']['last_name']); ?></p>
 
   <?php if (!empty($user['User']['bio'])) : ?>
     <div class="portlet light user-bio center">
