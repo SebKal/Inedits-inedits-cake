@@ -215,9 +215,10 @@
  * the cake shell command: cake schema create Sessions
  *
  */
-	Configure::write('Session', array(
-		'defaults' => 'php'
-	));
+  Configure::write('Session', array(
+      'defaults' => 'php',
+      'timeout' => 21600 //increase time in seconds
+  ));
 
 /**
  * A random string used in security hashing methods.
