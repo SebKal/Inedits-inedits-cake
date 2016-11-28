@@ -246,7 +246,6 @@ class UsersController extends AppController {
     if ($this->request->is(array('post', 'put'))) {
       $values = $this->request->data['User'];
 
-var_dump($values);
       if (!empty($this->request->data['User']['new_pass']) && !empty($this->request->data['User']['old_pass'])) {
         if ($this->validPassword($user, $values['old_pass'], $values['new_pass'], $values['new_pass_bis'])) {
           $this->request->data['User']['password'] = $values['new_pass'];
