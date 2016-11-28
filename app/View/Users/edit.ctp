@@ -31,6 +31,7 @@
                   'User',
                   array(
                     'role'          => 'form',
+                    'enctype' => 'multipart/form-data',
                     'inputDefaults' => array(
                       'div'   => false,
                       'class' => 'form-control',
@@ -52,19 +53,6 @@
               <div class="portlet light">
                 <div class="portlet-body">
                   <p class="profile-title">Vos auteurs préférés</p>
-                  <?php
-                    echo $this->Form->create(
-                      'User',
-                      array(
-                        'role'          => 'form',
-                        'enctype' => 'multipart/form-data',
-                        'inputDefaults' => array(
-                          'div'   => false,
-                          'class' => 'form-control',
-                          'label' => false)
-                        )
-                      );
-                  ?>
                     <div class="form-group">
                       <?php echo $this->Form->input('favorite_author', array('div' => '', 'placeholder' => 'Qui vous inspire ?'));?>
                     </div>
