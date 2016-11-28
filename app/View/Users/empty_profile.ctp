@@ -18,14 +18,14 @@
                 <?php endif; ?>
             </div>
             <div class="actions-links">
-                <?php if($currentUser && $currentUser['id'] == $user['User']['id'] || $currentUser['role_id'] == 1) : ?>    
+                <?php if($currentUser && $currentUser['id'] == $user['User']['id'] || $currentUser['role_id'] == 1) : ?>
                     <?php echo $this->Html->link('Modifier mon Profil', array('action' => 'edit', 'slug' => $user['User']['slug']), array('class' => 'btn btn-shadow-gray btn-block margin-top-20') ); ?>
                 <?php endif; ?>
             </div>
         </div>
         <div class="col-sm-9 profile-content">
-            <p class="user-name"><?php echo $user['User']['name'].' '.$user['User']['last_name']; ?></p>
-            
+            <p class="user-name"><?php echo ucfirst(strtolower($user['User']['name'])).' '.ucfirst(strtolower($user['User']['last_name'])); ?></p>
+
             <div class="portlet light user-empty">
                 <div class="portlet-body">
                     <p class="profile-title">Merci de votre inscription sur Inédits !</p>

@@ -426,10 +426,10 @@ class ContributionsController extends AppController {
 
         if ($this->Contribution->saveField('status', 3)) {
           // Author email
-          // $Email = new CakeEmail('approveContrib');
-          // $Email->to($user['User']['mail'])
-          //         ->viewVars( array('title' => $contribution['Contribution']['title'], 'contribSlug' => $contribution['Contribution']['slug'], 'treeSlug' => $contribution['Tree']['slug'] , 'author' => $user['User']['name'].' '.$user['User']['last_name']) )
-          //         ->send();
+          $Email = new CakeEmail('approveContrib');
+          $Email->to($user['User']['mail'])
+                  ->viewVars( array('title' => $contribution['Contribution']['title'], 'contribSlug' => $contribution['Contribution']['slug'], 'treeSlug' => $contribution['Tree']['slug'] , 'author' => $user['User']['name'].' '.$user['User']['last_name']) )
+                  ->send();
           // Previous Author email
           if ($contribution['Contribution']['parent_id'])
           {

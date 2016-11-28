@@ -1,5 +1,5 @@
 <div class="col-xs-12 col-sm-9 profile-content">
-  <p class="user-name"><?php echo $user['User']['name'].' '.$user['User']['last_name']; ?></p>
+  <p class="user-name"><?php echo ucfirst(strtolower($user['User']['name'])).' '.ucfirst(strtolower($user['User']['last_name'])); ?></p>
 
   <?php if (!empty($user['User']['bio'])) : ?>
     <div class="portlet light user-bio center">
@@ -74,7 +74,7 @@
       <div class="col-xs-6 col-sm-6">
         <div class="portlet light">
           <div class="portlet-body">
-            <p class="profile-title">En quoi l'écriture le motive-t-elle ?</p>
+            <p class="profile-title">En quoi l'écriture vous motive-t-elle ?</p>
             <p><?php echo $user['User']['social_writting'] ?></p>
           </div>
         </div>

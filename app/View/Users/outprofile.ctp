@@ -4,7 +4,7 @@
     <div class="row">
       <?php echo $this->element('users/profil-sidebar') ?>
       <div class="col-xs-6 col-sm-9 profile-content">
-          <p class="user-name"><?php echo $user['User']['name'].' '.$user['User']['last_name']; ?></p>
+          <p class="user-name"><?php echo ucfirst(strtolower($user['User']['name'])).' '.ucfirst(strtolower($user['User']['last_name'])); ?></p>
 
           <div class="portlet light user-empty">
               <div class="portlet-body">
