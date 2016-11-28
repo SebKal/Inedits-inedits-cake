@@ -246,6 +246,7 @@ class UsersController extends AppController {
     if ($this->request->is(array('post', 'put'))) {
       $values = $this->request->data['User'];
 
+var_dump($values);
       if (!empty($this->request->data['User']['new_pass']) && !empty($this->request->data['User']['old_pass'])) {
         if ($this->validPassword($user, $values['old_pass'], $values['new_pass'], $values['new_pass_bis'])) {
           $this->request->data['User']['password'] = $values['new_pass'];
@@ -335,7 +336,7 @@ class UsersController extends AppController {
 
       // Save User
       if ($this->User->save($this->request->data)) {
-          $this->clear_cache();
+          // $this->clear_cache();
           $this->Session->setFlash(__('Mise à jour effectuée'), 'alert-box', array('class'=>'alert-success'));
           $this->Session->write('Auth', $this->User->read(null, $this->Auth->User('id')));
       } else {
