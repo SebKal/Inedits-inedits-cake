@@ -184,7 +184,7 @@ class UsersController extends AppController {
 
       // Cover Upload
       if (!empty($this->request->data['User']['cover_file']['name'])) {
-
+exit('test');
         $extension  = strtolower(pathinfo($this->request->data['User']['cover_file']['name'], PATHINFO_EXTENSION));
         $slug       = strtr($this->request->data['User']['name'].'.'.$extension, 'áàâäãåçéèêëíìîïñóòôöõúùûüýÿ', 'aaaaaaceeeeiiiinooooouuuuyy');
         $dir        = new Folder(IMAGES . 'covers' . DS . $userId, true);
