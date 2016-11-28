@@ -335,7 +335,7 @@ class UsersController extends AppController {
 
       // Save User
       if ($this->User->save($this->request->data)) {
-          // $this->clear_cache();
+          $this->clear_cache();
           $this->Session->setFlash(__('Mise à jour effectuée'), 'alert-box', array('class'=>'alert-success'));
           $this->Session->write('Auth', $this->User->read(null, $this->Auth->User('id')));
       } else {
