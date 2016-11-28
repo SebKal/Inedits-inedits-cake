@@ -57,6 +57,7 @@
                       'User',
                       array(
                         'role'          => 'form',
+                        'enctype' => 'multipart/form-data',
                         'inputDefaults' => array(
                           'div'   => false,
                           'class' => 'form-control',
