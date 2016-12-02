@@ -2,13 +2,6 @@
 <?php $this->assign('title', 'Conditions générales d\'utilisation') ?>
 <?php $this->assign('description', 'Les conditions générales d\'Inedits') ?>
 
-<!-- VIEW BLOCKS -->
-<?php
-  $this->start('cover');
-    echo $this->element('global/page-cover', array('title' => 'Conditions générales d\'utilisation'));
-  $this->end();
-?>
-
 <section class="container-fluid mentions">
   <div class="container">
     <div class="row">
