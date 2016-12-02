@@ -131,6 +131,11 @@ class User extends AppModel {
     return true;
   }
 
+  public function afterSave($created) {
+     Cache::clear();
+  }
+
+
   public function getUserByPop() {
 
     $test = $this->find('all', array(
