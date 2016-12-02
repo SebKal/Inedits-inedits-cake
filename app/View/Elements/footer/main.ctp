@@ -105,6 +105,12 @@
               <?php echo $this->Html->link('Se connecter', array('controller' => 'users', 'action' => 'login')); ?>
             </li>
             <li>
+              <?php echo $this->Html->link('Mentions Légales', array('controller' => 'pages', 'action' => 'display', 'cgu')); ?>
+            </li>
+            <li>
+              <?php echo $this->Html->link('Mentions Légales', array('controller' => 'pages', 'action' => 'display', 'cgv')); ?>
+            </li>
+            <li>
               <?php echo $this->Html->link('Mentions Légales', array('controller' => 'pages', 'action' => 'display', 'mentions')); ?>
             </li>
           </ul>
