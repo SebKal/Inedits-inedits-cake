@@ -338,7 +338,6 @@ class UsersController extends AppController {
           $this->clear_cache();
           $this->Session->setFlash(__('Mise à jour effectuée'), 'alert-box', array('class'=>'alert-success'));
           $this->Session->write('Auth', $this->User->read(null, $this->Auth->User('id')));
-          return $this->redirect($this->referer());
       } else {
           $this->Session->setFlash(__('L\'utilisateur n\'a pas été édité. Merci de réessayer.'), 'alert-box', array('class'=>'alert-danger'));
       }
