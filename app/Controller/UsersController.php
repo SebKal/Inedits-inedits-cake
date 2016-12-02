@@ -590,6 +590,7 @@ class UsersController extends AppController {
    * @return void
    */
   public function clear_cache() {
+    exit('coucou');
     Cache::clear();
     clearCache();
   }
