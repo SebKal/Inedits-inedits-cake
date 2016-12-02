@@ -131,7 +131,7 @@ class User extends AppModel {
     return true;
   }
 
-  public function afterSave($created) {
+  public function afterSave($created, $options = array()) {
      Cache::clear();
   }
 
