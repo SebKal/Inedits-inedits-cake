@@ -1,11 +1,4 @@
-<!-- META -->
-<?php $this->assign('title', 'Conditions générales d\'utilisation') ?>
-<?php $this->assign('description', 'Les conditions générales d\'Inedits') ?>
 
-<section class="container-fluid mentions">
-  <div class="container">
-    <div class="row">
-      <div class="col-xs-12">
         <p>
           Ensemble des règlements régissant la participation des internautes au site www.inedits.fr
           Les présentes conditions générales d’utilisation (les « Conditions Générales ») sont conclues entre la société INEDITS SAS, (ci-après « INEDITS » ou « Editions INEDITS ») et l’utilisateur du site https://inedits.fr/ (ci-après le « Site ») et des services proposés par INEDITS sur le Site (ci-après « l’Utilisateur »).
@@ -183,8 +176,3 @@
             L’équipe de modération d’INEDITS examine les commentaires et critiques reçus. INEDITS est libre de publier ou non les commentaires et les critiques de son choix, ce choix étant entièrement discrétionnaire.
           </li>
         </ul>
-
-      </div>
-    </div>
-  </div>
-</section>
